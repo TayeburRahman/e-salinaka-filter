@@ -95,7 +95,7 @@ export default function ProductModal({ open, setOpen }: Props) {
   // ----------- fetch request -----------
   useEffect(() => {
     fetch(
-      `http://localhost:6060/api/v1/product/filter?category=${checked}&search=${search}&years=${years}`
+      `https://e-salinaka.onrender.com/api/v1/product/filter?category=${checked}&search=${search}&years=${years}`
     )
       .then((response) => response.json())
       .then((res) => {

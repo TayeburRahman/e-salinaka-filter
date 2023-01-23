@@ -35,7 +35,7 @@ const ChildModalProduct = ({
     setOpenChild(false);
   };
   const handelOnclick = (id: any) => {
-    fetch(`http://localhost:6060/api/v1/product/remove/${id}`, {
+    fetch(`https://e-salinaka.onrender.com/api/v1/product/remove/${id}`, {
       method: "DELETE",
     })
       .then((res) => {
