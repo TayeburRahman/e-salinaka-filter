@@ -46,7 +46,7 @@ const filterProduct = async (req, res) => {
 
   try {
     const page = parseInt(req.query.page) - 1 || 0;
-    const limit = parseInt(req.query.limit) || 5;
+    const limit = parseInt(req.query.limit) || 15;
     const search = req.query.search || "";
     let category = req.query.category || "All";
     let years = req.query.years 
